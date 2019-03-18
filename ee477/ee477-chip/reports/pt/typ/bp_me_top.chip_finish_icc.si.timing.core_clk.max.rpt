@@ -1,0 +1,1914 @@
+****************************************
+Report : timing
+	-path_type full_clock
+	-delay_type max
+	-slack_lesser_than 1000000.000
+	-max_paths 30
+	-group core_clk
+	-transition_time
+	-sort_by slack
+Design : bp_me_top
+Version: K-2015.12-SP3-2
+Date   : Mon Mar 18 14:40:21 2019
+****************************************
+
+Report timing status: Started...
+Report timing status: Processing group core_clk
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.051      0.223      0.778 f
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.041      1.310 H    2.088 f
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.074      0.107 &    2.195 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.062      0.039 &    2.234 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.045      0.026 &    2.260 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.090      0.041 &    2.301 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.160      0.149 &    2.450 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.050      0.032 &    2.482 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.095      0.108 &    2.591 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.175      0.099 &    2.689 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.087      0.067 &    2.757 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.114      0.119 &    2.875 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.127      0.084 &    2.959 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.265      0.118 &    3.077 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.089      0.162 &    3.239 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U287/QN (NOR2X0)                                     0.772      0.370 &    3.609 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place275/Z (NBUFFX32)                     0.040      0.447 &    4.055 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[518] (saed90_736x64_1P_bit)    0.031      0.011 &    4.066 r
+  data arrival time                                                                                                 4.066
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.066
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.430
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.051      0.223      0.778 f
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.041      1.310 H    2.088 f
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.074      0.107 &    2.195 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.062      0.039 &    2.234 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.045      0.026 &    2.260 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.090      0.041 &    2.301 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.160      0.149 &    2.450 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.050      0.032 &    2.482 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.095      0.108 &    2.591 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.175      0.099 &    2.689 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.087      0.067 &    2.757 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.114      0.119 &    2.875 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.127      0.084 &    2.959 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.265      0.118 &    3.077 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.089      0.162 &    3.239 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U287/QN (NOR2X0)                                     0.772      0.370 &    3.609 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place275/Z (NBUFFX32)                     0.040      0.447 &    4.055 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[520] (saed90_736x64_1P_bit)    0.031      0.011 &    4.066 r
+  data arrival time                                                                                                 4.066
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.066
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.430
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.051      0.223      0.778 f
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.041      1.310 H    2.088 f
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.074      0.107 &    2.195 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.062      0.039 &    2.234 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.045      0.026 &    2.260 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.090      0.041 &    2.301 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.160      0.149 &    2.450 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.050      0.032 &    2.482 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.095      0.108 &    2.591 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.175      0.099 &    2.689 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.087      0.067 &    2.757 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.114      0.119 &    2.875 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.127      0.084 &    2.959 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.265      0.118 &    3.077 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.089      0.162 &    3.239 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U287/QN (NOR2X0)                                     0.772      0.370 &    3.609 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place275/Z (NBUFFX32)                     0.040      0.447 &    4.055 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[516] (saed90_736x64_1P_bit)    0.031      0.011 &    4.066 r
+  data arrival time                                                                                                 4.066
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.066
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.430
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.051      0.223      0.778 f
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.041      1.310 H    2.088 f
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.074      0.107 &    2.195 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.062      0.039 &    2.234 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.045      0.026 &    2.260 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.090      0.041 &    2.301 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.160      0.149 &    2.450 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.050      0.032 &    2.482 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.095      0.108 &    2.591 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.175      0.099 &    2.689 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.087      0.067 &    2.757 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.114      0.119 &    2.875 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.127      0.084 &    2.959 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.265      0.118 &    3.077 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.089      0.162 &    3.239 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U287/QN (NOR2X0)                                     0.772      0.370 &    3.609 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place335/Z (NBUFFX32)                     0.046      0.431 &    4.040 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[517] (saed90_736x64_1P_bit)    0.038      0.020 &    4.060 r
+  data arrival time                                                                                                 4.060
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.060
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.423
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.051      0.223      0.778 f
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.041      1.310 H    2.088 f
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.074      0.107 &    2.195 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.062      0.039 &    2.234 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.045      0.026 &    2.260 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.090      0.041 &    2.301 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.160      0.149 &    2.450 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.050      0.032 &    2.482 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.095      0.108 &    2.591 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.175      0.099 &    2.689 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.087      0.067 &    2.757 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.114      0.119 &    2.875 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.127      0.084 &    2.959 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.265      0.118 &    3.077 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.089      0.162 &    3.239 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U287/QN (NOR2X0)                                     0.772      0.370 &    3.609 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place335/Z (NBUFFX32)                     0.046      0.431 &    4.040 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[519] (saed90_736x64_1P_bit)    0.038      0.020 &    4.060 r
+  data arrival time                                                                                                 4.060
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.060
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.423
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.051      0.223      0.778 f
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.041      1.310 H    2.088 f
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.074      0.107 &    2.195 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.062      0.039 &    2.234 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.045      0.026 &    2.260 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.090      0.041 &    2.301 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.160      0.149 &    2.450 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.050      0.032 &    2.482 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.095      0.108 &    2.591 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.175      0.099 &    2.689 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.087      0.067 &    2.757 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.114      0.119 &    2.875 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.127      0.084 &    2.959 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.265      0.118 &    3.077 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.089      0.162 &    3.239 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U287/QN (NOR2X0)                                     0.772      0.370 &    3.609 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place335/Z (NBUFFX32)                     0.046      0.431 &    4.040 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[521] (saed90_736x64_1P_bit)    0.038      0.020 &    4.060 r
+  data arrival time                                                                                                 4.060
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.060
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.423
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place140/Z (NBUFFX2)                           0.220      0.146 &    2.731 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place141/ZN (INVX0)                            0.546      0.354 &    3.084 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1044/QN (NAND2X1)                                 0.671      0.393 &    3.477 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1045/QN (NOR2X0)                                  0.225      0.444 &    3.921 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place392/Z (NBUFFX2)                    0.033      0.130 &    4.051 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[624] (saed90_736x64_1P_bit)    0.024      0.004 &    4.055 f
+  data arrival time                                                                                               4.055
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.055
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.419
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place140/Z (NBUFFX2)                           0.220      0.146 &    2.731 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place141/ZN (INVX0)                            0.546      0.354 &    3.084 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1040/QN (NAND2X1)                                 0.647      0.382 &    3.466 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1679/QN (NOR2X0)                                  0.254      0.381 &    3.847 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U2841/Z (NBUFFX2)                                  0.032      0.202 &    4.049 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[114] (saed90_736x64_1P_bit)    0.023      0.004 &    4.053 f
+  data arrival time                                                                                               4.053
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.053
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.417
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place140/Z (NBUFFX2)                           0.220      0.146 &    2.731 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place141/ZN (INVX0)                            0.546      0.354 &    3.084 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1033/QN (NAND2X1)                                 0.670      0.392 &    3.477 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1034/QN (NOR2X0)                                  0.252      0.390 &    3.867 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place119/Z (NBUFFX2)                    0.032      0.182 &    4.048 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[629] (saed90_736x64_1P_bit)    0.023      0.002 &    4.051 f
+  data arrival time                                                                                               4.051
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.051
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.414
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.088      0.044 &    2.332 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.150      0.148 &    2.480 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.062      0.042 &    2.522 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.103      0.116 &    2.638 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.150      0.101 &    2.739 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.086      0.060 &    2.799 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.124      0.123 &    2.921 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.112      0.086 &    3.008 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.285      0.107 &    3.114 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.102      0.182 &    3.296 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U293/QN (NOR2X0)                                     0.080      0.065 &    3.361 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place332/Z (NBUFFX2)                      0.146      0.126 &    3.486 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place607/ZN (INVX0)                       0.319      0.204 &    3.690 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place608/ZN (IBUFFX4)                     0.044      0.344 &    4.035 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[544] (saed90_736x64_1P_bit)    0.032      0.008 &    4.043 f
+  data arrival time                                                                                                 4.043
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.043
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.406
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.088      0.044 &    2.332 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.150      0.148 &    2.480 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.062      0.042 &    2.522 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.103      0.116 &    2.638 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.150      0.101 &    2.739 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.086      0.060 &    2.799 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.124      0.123 &    2.921 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.112      0.086 &    3.008 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.285      0.107 &    3.114 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.102      0.182 &    3.296 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U293/QN (NOR2X0)                                     0.080      0.065 &    3.361 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place332/Z (NBUFFX2)                      0.146      0.126 &    3.486 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place607/ZN (INVX0)                       0.319      0.204 &    3.690 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place608/ZN (IBUFFX4)                     0.044      0.344 &    4.035 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[548] (saed90_736x64_1P_bit)    0.032      0.008 &    4.043 f
+  data arrival time                                                                                                 4.043
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.043
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.406
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U217/QN (NAND2X1)                                    0.088      0.044 &    2.332 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place89/Z (NBUFFX4)                              0.150      0.148 &    2.480 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U219/QN (NAND2X2)                                    0.062      0.042 &    2.522 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place129/Z (NBUFFX8)                             0.103      0.116 &    2.638 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place130/ZN (INVX1)                              0.150      0.101 &    2.739 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U261/QN (NAND2X1)                                    0.086      0.060 &    2.799 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place148/Z (NBUFFX8)                             0.124      0.123 &    2.921 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place149/ZN (INVX0)                              0.112      0.086 &    3.008 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U263/QN (NAND2X4)                                    0.285      0.107 &    3.114 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U282/Q (OR2X1)                                       0.102      0.182 &    3.296 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U293/QN (NOR2X0)                                     0.080      0.065 &    3.361 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place332/Z (NBUFFX2)                      0.146      0.126 &    3.486 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place607/ZN (INVX0)                       0.319      0.204 &    3.690 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place608/ZN (IBUFFX4)                     0.044      0.344 &    4.035 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[546] (saed90_736x64_1P_bit)    0.032      0.008 &    4.043 f
+  data arrival time                                                                                                 4.043
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.043
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.406
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place140/Z (NBUFFX2)                           0.220      0.146 &    2.731 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place141/ZN (INVX0)                            0.546      0.354 &    3.084 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U996/QN (NAND2X0)                                  0.538      0.330 &    3.415 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U998/Q (MUX21X2)                                   0.157      0.391 &    3.806 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1659/QN (NOR2X0)                                  0.119      0.119 &    3.924 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_clock21/ZN (INVX2)                      0.109      0.067 &    3.992 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_clock20/ZN (INVX8)                      0.042      0.027 &    4.019 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[132] (saed90_736x64_1P_bit)    0.033      0.013 &    4.032 f
+  data arrival time                                                                                               4.032
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.032
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.396
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place140/Z (NBUFFX2)                           0.220      0.146 &    2.731 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place141/ZN (INVX0)                            0.546      0.354 &    3.084 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U996/QN (NAND2X0)                                  0.538      0.330 &    3.415 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U998/Q (MUX21X2)                                   0.157      0.391 &    3.806 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U999/QN (NOR2X0)                                   0.152      0.126 &    3.932 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_clock19/ZN (INVX2)                      0.084      0.057 &    3.989 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_clock18/ZN (INVX4)                      0.039      0.030 &    4.019 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[644] (saed90_736x64_1P_bit)    0.028      0.009 &    4.028 f
+  data arrival time                                                                                               4.028
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.028
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.391
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place140/Z (NBUFFX2)                           0.220      0.146 &    2.731 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place141/ZN (INVX0)                            0.546      0.354 &    3.084 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1044/QN (NAND2X1)                                 0.671      0.393 &    3.477 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1681/QN (NOR2X0)                                  0.221      0.437 &    3.914 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U2845/Z (NBUFFX2)                                  0.038      0.109 &    4.023 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[112] (saed90_736x64_1P_bit)    0.027      0.004 &    4.027 f
+  data arrival time                                                                                               4.027
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.027
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.390
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place234/ZN (INVX4)                              0.082      0.039 &    2.303 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U63/QN (NAND3X0)                                     0.131      0.073 &    2.376 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place90/Z (NBUFFX8)                              0.153      0.133 &    2.509 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt71/Q (AND2X1)                           0.072      0.110 &    2.620 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt72/ZN (INVX4)                           0.121      0.062 &    2.682 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place138/Z (NBUFFX2)                             0.220      0.161 &    2.843 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place139/ZN (INVX2)                              0.102      0.067 &    2.910 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U325/QN (NAND2X1)                                    0.585      0.247 &    3.157 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U337/QN (NOR2X0)                                     0.188      0.210 &    3.367 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place320/Z (NBUFFX2)                      0.149      0.141 &    3.508 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place639/ZN (INVX1)                       0.276      0.222 &    3.729 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place640/ZN (IBUFFX4)                     0.041      0.287 &    4.016 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[716] (saed90_736x64_1P_bit)    0.030      0.011 &    4.027 f
+  data arrival time                                                                                                 4.027
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.027
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.390
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place234/ZN (INVX4)                              0.082      0.039 &    2.303 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U63/QN (NAND3X0)                                     0.131      0.073 &    2.376 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place90/Z (NBUFFX8)                              0.153      0.133 &    2.509 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt71/Q (AND2X1)                           0.072      0.110 &    2.620 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt72/ZN (INVX4)                           0.121      0.062 &    2.682 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place138/Z (NBUFFX2)                             0.220      0.161 &    2.843 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place139/ZN (INVX2)                              0.102      0.067 &    2.910 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U325/QN (NAND2X1)                                    0.585      0.247 &    3.157 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U337/QN (NOR2X0)                                     0.188      0.210 &    3.367 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place320/Z (NBUFFX2)                      0.149      0.141 &    3.508 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place639/ZN (INVX1)                       0.276      0.222 &    3.729 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place640/ZN (IBUFFX4)                     0.041      0.287 &    4.016 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[718] (saed90_736x64_1P_bit)    0.030      0.011 &    4.027 f
+  data arrival time                                                                                                 4.027
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.027
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.390
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place234/ZN (INVX4)                              0.082      0.039 &    2.303 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U63/QN (NAND3X0)                                     0.131      0.073 &    2.376 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place90/Z (NBUFFX8)                              0.153      0.133 &    2.509 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt71/Q (AND2X1)                           0.072      0.110 &    2.620 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt72/ZN (INVX4)                           0.121      0.062 &    2.682 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place138/Z (NBUFFX2)                             0.220      0.161 &    2.843 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place139/ZN (INVX2)                              0.102      0.067 &    2.910 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U325/QN (NAND2X1)                                    0.585      0.247 &    3.157 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U337/QN (NOR2X0)                                     0.188      0.210 &    3.367 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place320/Z (NBUFFX2)                      0.149      0.141 &    3.508 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place639/ZN (INVX1)                       0.276      0.222 &    3.729 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place640/ZN (IBUFFX4)                     0.041      0.287 &    4.016 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[720] (saed90_736x64_1P_bit)    0.030      0.011 &    4.027 f
+  data arrival time                                                                                                 4.027
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.027
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.390
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place234/ZN (INVX4)                              0.082      0.039 &    2.303 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U63/QN (NAND3X0)                                     0.131      0.073 &    2.376 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place90/Z (NBUFFX8)                              0.153      0.133 &    2.509 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt71/Q (AND2X1)                           0.072      0.110 &    2.620 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt72/ZN (INVX4)                           0.121      0.062 &    2.682 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place138/Z (NBUFFX2)                             0.220      0.161 &    2.843 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place139/ZN (INVX2)                              0.102      0.067 &    2.910 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U325/QN (NAND2X1)                                    0.585      0.247 &    3.157 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U337/QN (NOR2X0)                                     0.188      0.210 &    3.367 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place320/Z (NBUFFX2)                      0.149      0.141 &    3.508 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place639/ZN (INVX1)                       0.276      0.222 &    3.729 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place640/ZN (IBUFFX4)                     0.041      0.287 &    4.016 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[722] (saed90_736x64_1P_bit)    0.030      0.011 &    4.027 f
+  data arrival time                                                                                                 4.027
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.027
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.390
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place234/ZN (INVX4)                              0.082      0.039 &    2.303 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U63/QN (NAND3X0)                                     0.131      0.073 &    2.376 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place90/Z (NBUFFX8)                              0.153      0.133 &    2.509 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt71/Q (AND2X1)                           0.072      0.110 &    2.620 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_route_opt72/ZN (INVX4)                           0.121      0.062 &    2.682 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place138/Z (NBUFFX2)                             0.220      0.161 &    2.843 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place139/ZN (INVX2)                              0.102      0.067 &    2.910 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U325/QN (NAND2X1)                                    0.585      0.247 &    3.157 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U337/QN (NOR2X0)                                     0.188      0.210 &    3.367 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place320/Z (NBUFFX2)                      0.149      0.141 &    3.508 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place639/ZN (INVX1)                       0.276      0.222 &    3.729 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place640/ZN (IBUFFX4)                     0.041      0.287 &    4.016 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[724] (saed90_736x64_1P_bit)    0.030      0.011 &    4.027 f
+  data arrival time                                                                                                 4.027
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.027
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.390
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                               0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                      0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                       0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                       0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place144/Z (NBUFFX2)                             0.195      0.141 &    2.726 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place145/ZN (INVX8)                              0.084      0.053 &    2.778 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U83/QN (NOR2X4)                                      0.082      0.040 &    2.819 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place228/ZN (INVX4)                              0.030      0.019 &    2.838 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place229/ZN (INVX2)                              0.122      0.063 &    2.901 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U95/QN (NAND2X4)                                     0.182      0.099 &    3.000 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U182/Q (MUX21X1)                                     0.196      0.206 &    3.206 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U258/QN (NOR2X0)                                     0.484      0.235 &    3.441 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place306/Z (NBUFFX4)                      0.125      0.426 &    3.867 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place367/Z (NBUFFX16)                     0.047      0.155 &    4.022 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[409] (saed90_736x64_1P_bit)    0.037      0.004 &    4.026 r
+  data arrival time                                                                                                 4.026
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.026
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.389
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                               0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                      0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                       0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                       0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place144/Z (NBUFFX2)                             0.195      0.141 &    2.726 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place145/ZN (INVX8)                              0.084      0.053 &    2.778 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U83/QN (NOR2X4)                                      0.082      0.040 &    2.819 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place228/ZN (INVX4)                              0.030      0.019 &    2.838 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place229/ZN (INVX2)                              0.122      0.063 &    2.901 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U95/QN (NAND2X4)                                     0.182      0.099 &    3.000 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U182/Q (MUX21X1)                                     0.196      0.206 &    3.206 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U258/QN (NOR2X0)                                     0.484      0.235 &    3.441 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place306/Z (NBUFFX4)                      0.125      0.426 &    3.867 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place367/Z (NBUFFX16)                     0.047      0.155 &    4.022 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[413] (saed90_736x64_1P_bit)    0.037      0.004 &    4.026 r
+  data arrival time                                                                                                 4.026
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.026
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.389
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                               0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                      0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                       0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                       0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place144/Z (NBUFFX2)                             0.195      0.141 &    2.726 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place145/ZN (INVX8)                              0.084      0.053 &    2.778 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U83/QN (NOR2X4)                                      0.082      0.040 &    2.819 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place228/ZN (INVX4)                              0.030      0.019 &    2.838 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place229/ZN (INVX2)                              0.122      0.063 &    2.901 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U95/QN (NAND2X4)                                     0.182      0.099 &    3.000 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U182/Q (MUX21X1)                                     0.196      0.206 &    3.206 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U258/QN (NOR2X0)                                     0.484      0.235 &    3.441 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place306/Z (NBUFFX4)                      0.125      0.426 &    3.867 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place367/Z (NBUFFX16)                     0.047      0.155 &    4.022 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[411] (saed90_736x64_1P_bit)    0.037      0.004 &    4.026 r
+  data arrival time                                                                                                 4.026
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.026
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.389
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                               0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                      0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                       0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                       0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place144/Z (NBUFFX2)                             0.195      0.141 &    2.726 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place145/ZN (INVX8)                              0.084      0.053 &    2.778 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U83/QN (NOR2X4)                                      0.082      0.040 &    2.819 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place228/ZN (INVX4)                              0.030      0.019 &    2.838 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place229/ZN (INVX2)                              0.122      0.063 &    2.901 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U95/QN (NAND2X4)                                     0.182      0.099 &    3.000 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U182/Q (MUX21X1)                                     0.196      0.206 &    3.206 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U258/QN (NOR2X0)                                     0.484      0.235 &    3.441 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place306/Z (NBUFFX4)                      0.125      0.426 &    3.867 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place367/Z (NBUFFX16)                     0.047      0.155 &    4.022 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[407] (saed90_736x64_1P_bit)    0.037      0.004 &    4.026 r
+  data arrival time                                                                                                 4.026
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.026
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.389
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                       Trans       Incr       Path
+  --------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                  0.000      0.000      0.000
+  clock source latency                                                                                   0.000      0.000
+  clk_i (in)                                                                                  0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                  0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                      0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                        0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                               0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                               0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                              0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                              0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                               0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                      0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                       0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                       0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place144/Z (NBUFFX2)                             0.195      0.141 &    2.726 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place145/ZN (INVX8)                              0.084      0.053 &    2.778 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U83/QN (NOR2X4)                                      0.082      0.040 &    2.819 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place228/ZN (INVX4)                              0.030      0.019 &    2.838 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place229/ZN (INVX2)                              0.122      0.063 &    2.901 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U95/QN (NAND2X4)                                     0.182      0.099 &    3.000 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U182/Q (MUX21X1)                                     0.196      0.206 &    3.206 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U258/QN (NOR2X0)                                     0.484      0.235 &    3.441 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place306/Z (NBUFFX4)                      0.125      0.426 &    3.867 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place367/Z (NBUFFX16)                     0.047      0.155 &    4.022 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/WBM1[405] (saed90_736x64_1P_bit)    0.037      0.004 &    4.026 r
+  data arrival time                                                                                                 4.026
+
+  clock core_clk (rise edge)                                                                  0.000      3.200      3.200
+  clock source latency                                                                                   0.000      3.200
+  clk_i (in)                                                                                  0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                                 0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                                 0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                  0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                                 0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                                 0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                          0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)          0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                          0.090      3.687
+  library setup time                                                                                    -0.050      3.637
+  data required time                                                                                                3.637
+  --------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                3.637
+  data arrival time                                                                                                -4.026
+  --------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                 -0.389
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                    Trans       Incr       Path
+  -----------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                               0.000      0.000      0.000
+  clock source latency                                                                                0.000      0.000
+  clk_i (in)                                                                               0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                              0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                              0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                               0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                              0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                              0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                               0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                   0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                     0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                            0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                            0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                           0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                           0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                            0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U85/QN (NAND3X0)                                  0.127      0.045 &    2.396 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U86/Q (OA21X1)                                    0.067      0.097 &    2.492 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U88/QN (NAND2X0)                                  0.182      0.103 &    2.595 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_clock81/ZN (IBUFFX4)                          0.157      0.154 &    2.749 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_clock83/ZN (INVX0)                            0.093      0.070 &    2.820 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_clock82/ZN (INVX2)                            0.092      0.056 &    2.875 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U623/Q (MUX21X1)                                  0.123      0.129 &    3.004 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U847/Q (MUX21X1)                                  0.081      0.122 &    3.126 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U848/QN (NAND2X1)                                 0.626      0.291 &    3.416 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1211/QN (NOR2X0)                                 0.248      0.454 &    3.870 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place499/Z (NBUFFX2)                   0.034      0.154 &    4.024 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[50] (saed90_736x64_1P_bit)    0.024      0.001 &    4.025 f
+  data arrival time                                                                                              4.025
+
+  clock core_clk (rise edge)                                                               0.000      3.200      3.200
+  clock source latency                                                                                0.000      3.200
+  clk_i (in)                                                                               0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                              0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                              0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                               0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                              0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                              0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                       0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)       0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                       0.090      3.687
+  library setup time                                                                                 -0.050      3.637
+  data required time                                                                                             3.637
+  -----------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                             3.637
+  data arrival time                                                                                             -4.025
+  -----------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                              -0.389
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U85/QN (NAND3X0)                                   0.127      0.045 &    2.396 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U86/Q (OA21X1)                                     0.067      0.097 &    2.492 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U88/QN (NAND2X0)                                   0.182      0.103 &    2.595 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_clock81/ZN (IBUFFX4)                           0.157      0.154 &    2.749 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U586/QN (NOR2X1)                                   0.202      0.114 &    2.863 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U587/Q (AO22X1)                                    0.110      0.149 &    3.013 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U832/Q (MUX21X1)                                   0.067      0.108 &    3.121 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U833/QN (NAND2X1)                                  0.652      0.298 &    3.419 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U834/QN (NOR2X0)                                   0.271      0.381 &    3.799 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place530/Z (NBUFFX2)                    0.039      0.217 &    4.016 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[695] (saed90_736x64_1P_bit)    0.028      0.004 &    4.021 f
+  data arrival time                                                                                               4.021
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.021
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.384
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.107      0.048 &    2.399 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.054      0.106 &    2.505 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.060      0.080 &    2.585 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place144/Z (NBUFFX2)                           0.195      0.141 &    2.726 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place145/ZN (INVX8)                            0.084      0.053 &    2.778 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U83/QN (NOR2X4)                                    0.082      0.040 &    2.819 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place228/ZN (INVX4)                            0.030      0.019 &    2.838 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place229/ZN (INVX2)                            0.122      0.063 &    2.901 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U931/QN (NAND2X0)                                  0.426      0.228 &    3.129 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place189/ZN (INVX0)                            0.312      0.188 &    3.318 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U936/QN (AOI22X1)                                  0.150      0.208 &    3.526 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1634/QN (NOR2X0)                                  0.291      0.192 &    3.718 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U2569/Z (NBUFFX32)                                 0.034      0.295 &    4.014 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[154] (saed90_736x64_1P_bit)    0.025      0.003 &    4.016 r
+  data arrival time                                                                                               4.016
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.016
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.380
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.051      0.223      0.778 f
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.041      1.310 H    2.088 f
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.074      0.107 &    2.195 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.062      0.039 &    2.234 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.045      0.026 &    2.260 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.092      0.062 &    2.322 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U73/QN (NOR2X0)                                    0.117      0.051 &    2.373 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U77/Q (OA21X1)                                     0.050      0.092 &    2.465 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U78/Q (OA21X1)                                     0.058      0.082 &    2.546 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place140/Z (NBUFFX2)                           0.211      0.152 &    2.698 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place141/ZN (INVX0)                            0.647      0.355 &    3.053 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1200/QN (NAND2X0)                                 0.490      0.318 &    3.371 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1201/QN (NOR2X0)                                  0.307      0.370 &    3.742 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U2762/Z (NBUFFX2)                                  0.042      0.215 &    3.957 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/icc_place847/Z (NBUFFX2)                    0.028      0.056 &    4.013 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[515] (saed90_736x64_1P_bit)    0.020      0.002 &    4.015 r
+  data arrival time                                                                                               4.015
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.015
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.378
+
+
+  Startpoint: genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Endpoint: genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem
+               (rising edge-triggered flip-flop clocked by core_clk)
+  Last common pin: CTSINVX16_G1B2I4/ZN
+  Path Group: core_clk
+  Path Type: max
+  Max Data Paths Derating Factor  : 1.010
+  Min Clock Paths Derating Factor : 0.990
+  Max Clock Paths Derating Factor : 1.010
+
+  Point                                                                                     Trans       Incr       Path
+  ------------------------------------------------------------------------------------------------------------------------
+  clock core_clk (rise edge)                                                                0.000      0.000      0.000
+  clock source latency                                                                                 0.000      0.000
+  clk_i (in)                                                                                0.000      0.000 &    0.000 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.028      0.031 &    0.031 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.117      0.032 &    0.064 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.151      0.140 &    0.204 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.179      0.082 &    0.286 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.187      0.141 &    0.428 f
+  CTSINVX8_G1B1I1/ZN (INVX4)                                                                0.197      0.114 &    0.542 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/CLK (DFFX1)                    0.199      0.013 &    0.555 r
+  genblk1_0__bp_cce_top/bp_cce/cce_reg/transfer_lce_r_reg_0_/Q (DFFX1)                      0.058      0.206      0.761 r
+  genblk1_0__bp_cce_top/bp_cce/U713/Q (MUX21X1)                                             0.040      1.359 H    2.119 r
+  genblk1_0__bp_cce_top/bp_cce/U714/Q (OA221X1)                                             0.081      0.104 &    2.223 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place233/ZN (INVX4)                            0.054      0.040 &    2.264 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place232/ZN (INVX8)                            0.050      0.024 &    2.288 r
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place81/ZN (INVX1)                             0.077      0.063 &    2.351 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U85/QN (NAND3X0)                                   0.127      0.045 &    2.396 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U86/Q (OA21X1)                                     0.067      0.097 &    2.492 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U88/QN (NAND2X0)                                   0.182      0.103 &    2.595 f
+  genblk1_0__bp_cce_top/bp_cce/directory/icc_place224/QN (NAND2X0)                          0.232      0.120 &    2.715 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U772/QN (NOR2X0)                                   0.110      0.092 &    2.808 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1073/QN (NAND2X0)                                 0.379      0.195 &    3.003 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1074/QN (NAND2X0)                                 0.152      0.236 &    3.238 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U1075/QN (NAND2X1)                                 0.623      0.327 &    3.565 r
+  genblk1_0__bp_cce_top/bp_cce/directory/U1548/QN (NOR2X0)                                  0.199      0.364 &    3.929 f
+  genblk1_0__bp_cce_top/bp_cce/directory/U2683/Z (NBUFFX2)                                  0.032      0.084 &    4.013 f
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/I1[229] (saed90_736x64_1P_bit)    0.023      0.001 &    4.014 f
+  data arrival time                                                                                               4.014
+
+  clock core_clk (rise edge)                                                                0.000      3.200      3.200
+  clock source latency                                                                                 0.000      3.200
+  clk_i (in)                                                                                0.000      0.000 &    3.200 r
+  CTSINVX4_G1B6I1/ZN (INVX32)                                                               0.023      0.027 &    3.227 f
+  CTSINVX8_G1B5I2/ZN (INVX16)                                                               0.106      0.028 &    3.255 r
+  CTSINVX8_G1B4I3/ZN (INVX8)                                                                0.100      0.104 &    3.358 f
+  CTSINVX8_G1B3I12/ZN (INVX8)                                                               0.147      0.063 &    3.421 r
+  CTSINVX16_G1B2I4/ZN (INVX8)                                                               0.147      0.115 &    3.536 f
+  genblk1_0__bp_cce_top/bp_cce/directory/CTSINVX2_G1B1I6/ZN (INVX32)                        0.048      0.055 &    3.591 r
+  genblk1_0__bp_cce_top/bp_cce/directory/wg_ram/macro_mem/CE1 (saed90_736x64_1P_bit)        0.048      0.005 &    3.596 r
+  clock reconvergence pessimism                                                                        0.090      3.687
+  library setup time                                                                                  -0.050      3.637
+  data required time                                                                                              3.637
+  ------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                              3.637
+  data arrival time                                                                                              -4.014
+  ------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                               -0.378
+
+Report timing status: Processing group core_clk (total endpoints 14836)...10% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...20% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...30% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...40% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...50% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...60% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...70% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...80% done.
+Report timing status: Processing group core_clk (total endpoints 14836)...90% done.
+Warning: report_timing has satisfied the max_paths criteria. There are 14806 further endpoints which have paths of interest with slack less than 1000000.000 that were not considered when generating this report. (UITE-502)
+
+Report timing status: Completed...
+1
